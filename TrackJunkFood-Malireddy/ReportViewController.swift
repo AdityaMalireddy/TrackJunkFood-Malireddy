@@ -19,7 +19,9 @@ class ReportViewController: UIViewController {
     @IBAction func Record(_ sender: Any) {
         
     }
-    
+    @IBAction func unwindFromTable(Segue:UIStoryboardSegue){
+        TextVW.text=AppDelegate.food.combinedReport()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

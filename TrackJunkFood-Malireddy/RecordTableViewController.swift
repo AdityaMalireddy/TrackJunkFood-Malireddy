@@ -44,8 +44,6 @@ class RecordTableViewController: UITableViewController {
         let item = AppDelegate.food.Foods[indexPath.row]
         cell.textLabel?.text = item.Name
         cell.detailTextLabel?.text = "\(item.Calories) cal"
-        
-
         return cell
     }
  
@@ -88,11 +86,14 @@ class RecordTableViewController: UITableViewController {
     /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // In a storyboard-based application, you will often want to do a little preparation before navigation */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        AppDelegate.food.increaseTally(forItem:tableView.indexPathForSelectedRow!.row)
+        
     }
-    */
+    
 
 }
