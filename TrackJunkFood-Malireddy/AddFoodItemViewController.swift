@@ -48,7 +48,7 @@ class AddFoodItemViewController: UIViewController {
         let cal  = caloriesTF.text!
         if identifier == "doneid" {
             if (food == "") || (cal=="") {
-                label.text = "Please enter some values"
+                label.text = "Please enter required values"
                 return false          }
         }
         
