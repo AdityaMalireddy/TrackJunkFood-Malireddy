@@ -33,8 +33,10 @@ class FoodRecorder{
         Foods = [FoodData(name: "PopCorn", caloriesPerServing: 106, noOfServings: 1),
                  FoodData(name: "Coke", caloriesPerServing: 140, noOfServings: 1),
                  FoodData(name: "Potato Chips", caloriesPerServing: 152, noOfServings: 1),
-                 FoodData(name: "Cheese Burger", caloriesPerServing: 254, noOfServings: 1),
-                 FoodData(name: "Pasta", caloriesPerServing: 208, noOfServings: 1)]
+                 FoodData(name: "Cheese Burger", caloriesPerServing: 188, noOfServings: 1)]
+    }
+    func addFoodItem(food:String,cal:Double) {
+        Foods.append(FoodData(name:food,caloriesPerServing:cal,noOfServings:0))
     }
     
     func increaseTally(forItem i : Int){
@@ -65,9 +67,7 @@ class FoodRecorder{
         }
         return rep + "\nTotal calories consumed is \(totalCalories())."
     }
-    func addFoodItem(_ food : FoodData){
-        Foods.append(food)
-    }
+    
     
     func reset(){
         for i in 0...Foods.count-1{

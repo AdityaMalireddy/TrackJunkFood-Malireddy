@@ -46,7 +46,9 @@ class RecordTableViewController: UITableViewController {
         cell.detailTextLabel?.text = "\(item.Calories) cal"
         return cell
     }
- 
+    @IBAction func addNewFoodItem(segue:UIStoryboardSegue){
+        tableView.reloadData()
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -90,10 +92,11 @@ class RecordTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
+        if segue.identifier == "jfback" {
         AppDelegate.food.increaseTally(forItem:tableView.indexPathForSelectedRow!.row)
-        
+        }
+    }
     }
     
 
-}
+

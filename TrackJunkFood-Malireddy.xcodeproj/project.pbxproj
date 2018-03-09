@@ -15,6 +15,7 @@
 		3F288126204FAE2700916D7B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F288125204FAE2700916D7B /* Model.swift */; };
 		3F28812A204FBF2100916D7B /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F288129204FBF2100916D7B /* ReportViewController.swift */; };
 		3F28812C204FD18000916D7B /* RecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F28812B204FD18000916D7B /* RecordTableViewController.swift */; };
+		3F2881762052136500916D7B /* AddFoodItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2881752052136500916D7B /* AddFoodItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3F288125204FAE2700916D7B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3F288129204FBF2100916D7B /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		3F28812B204FD18000916D7B /* RecordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewController.swift; sourceTree = "<group>"; };
+		3F2881752052136500916D7B /* AddFoodItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				3F28811C204FADD600916D7B /* LaunchScreen.storyboard */,
 				3F288117204FADD600916D7B /* Main.storyboard */,
 				3F28812B204FD18000916D7B /* RecordTableViewController.swift */,
+				3F2881752052136500916D7B /* AddFoodItemViewController.swift */,
 			);
 			path = "TrackJunkFood-Malireddy";
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				3F288116204FADD600916D7B /* ViewController.swift in Sources */,
 				3F288114204FADD600916D7B /* AppDelegate.swift in Sources */,
 				3F28812C204FD18000916D7B /* RecordTableViewController.swift in Sources */,
+				3F2881762052136500916D7B /* AddFoodItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
